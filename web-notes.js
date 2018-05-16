@@ -27,4 +27,14 @@ app.post('/notes', (req, res) => {
   res.redirect('/');
 });
 
+// app.delete('/notes/:id', (req, res) => {
+//   notes.splice(req.params.id, 1);
+//   res.send('deleted');
+// });
+
+app.delete('/notes/1', (req, res) => {
+  notes.splice(1, 1);
+  res.send('deleted');
+});
+
 app.listen(3000, () => console.log('Example app listening on port 3000!'))
