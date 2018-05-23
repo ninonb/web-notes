@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 });
 
 app.use('/css', express.static('css'));
+app.use('/js', express.static('js'));
 
 const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: true }));
